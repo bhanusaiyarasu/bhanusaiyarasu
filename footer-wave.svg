@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" width="1200" height="220">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap');
+      
+      .footer-bg { fill: #0d1117; }
+
+      .wave1 { animation: w1 5s ease-in-out infinite; }
+      .wave2 { animation: w2 7s ease-in-out infinite; }
+      .wave3 { animation: w3 9s ease-in-out infinite; }
+      .wave4 { animation: w4 6s ease-in-out infinite; }
+
+      @keyframes w1 { 0%,100%{transform:translateX(0)} 50%{transform:translateX(-25px)} }
+      @keyframes w2 { 0%,100%{transform:translateX(0)} 50%{transform:translateX(20px)} }
+      @keyframes w3 { 0%,100%{transform:translateX(0)} 50%{transform:translateX(-15px)} }
+      @keyframes w4 { 0%,100%{transform:translateX(0)} 50%{transform:translateX(30px)} }
+
+      .ft-main {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        fill: #e6edf3;
+        animation: textGlow 3s ease-in-out infinite;
+      }
+      .ft-sub {
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        fill: #8b949e;
+        animation: textGlow 3s ease-in-out infinite;
+        animation-delay: 0.6s;
+      }
+      @keyframes textGlow {
+        0%,100% { opacity:0.6; filter: drop-shadow(0 0 0px transparent); }
+        50% { opacity:1; filter: drop-shadow(0 0 8px rgba(199,146,234,0.5)); }
+      }
+
+      .sparkle { animation: sp 2s ease-in-out infinite; }
+      @keyframes sp {
+        0%,100% { opacity:0.15; r:1; }
+        50% { opacity:0.9; r:2; }
+      }
+      .heart { animation: beat 1.2s ease-in-out infinite; }
+      @keyframes beat {
+        0%,100% { transform: scale(1); }
+        50% { transform: scale(1.15); }
+      }
+    </style>
+
+    <linearGradient id="wg1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff; stop-opacity:0.35"/>
+      <stop offset="100%" style="stop-color:#0d1117; stop-opacity:0.9"/>
+    </linearGradient>
+    <linearGradient id="wg2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c792ea; stop-opacity:0.25"/>
+      <stop offset="100%" style="stop-color:#0d1117; stop-opacity:0.8"/>
+    </linearGradient>
+    <linearGradient id="wg3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8a735; stop-opacity:0.18"/>
+      <stop offset="100%" style="stop-color:#0d1117; stop-opacity:0.7"/>
+    </linearGradient>
+    <linearGradient id="wg4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b; stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#0d1117; stop-opacity:0.6"/>
+    </linearGradient>
+  </defs>
+
+  <rect class="footer-bg" width="1200" height="220"/>
+
+  <!-- Sparkles -->
+  <circle class="sparkle" cx="80" cy="18" r="1.5" fill="#e8a735" style="animation-delay:0s"/>
+  <circle class="sparkle" cx="250" cy="12" r="1" fill="#00d4ff" style="animation-delay:0.4s"/>
+  <circle class="sparkle" cx="480" cy="22" r="1.2" fill="#c792ea" style="animation-delay:0.8s"/>
+  <circle class="sparkle" cx="720" cy="10" r="1" fill="#ff6b6b" style="animation-delay:1.2s"/>
+  <circle class="sparkle" cx="950" cy="20" r="1.5" fill="#e8a735" style="animation-delay:1.6s"/>
+  <circle class="sparkle" cx="1130" cy="15" r="1" fill="#00d4ff" style="animation-delay:2s"/>
+
+  <!-- Text -->
+  <text x="600" y="40" class="ft-main" text-anchor="middle">🚀 Until Next Time — Keep Shipping!</text>
+  <g class="heart" transform-origin="600 62">
+    <text x="600" y="64" class="ft-sub" text-anchor="middle">Made with ❤️ by Bhanu Sai · Thanks for stopping by!</text>
+  </g>
+
+  <!-- Wave 4 (deepest) -->
+  <g class="wave4">
+    <path d="M0,120 C120,95 280,145 430,115 C580,85 720,140 870,110 C1020,80 1120,130 1200,118 L1200,220 L0,220 Z" fill="url(#wg4)"/>
+  </g>
+  <!-- Wave 3 -->
+  <g class="wave3">
+    <path d="M0,140 C160,115 310,160 460,130 C610,100 760,150 910,125 C1060,100 1140,145 1200,135 L1200,220 L0,220 Z" fill="url(#wg3)"/>
+  </g>
+  <!-- Wave 2 -->
+  <g class="wave2">
+    <path d="M0,155 C130,135 270,170 420,148 C570,126 710,165 860,145 C1010,125 1110,158 1200,150 L1200,220 L0,220 Z" fill="url(#wg2)"/>
+  </g>
+  <!-- Wave 1 (front) -->
+  <g class="wave1">
+    <path d="M0,170 C180,150 330,185 500,162 C670,140 820,178 970,158 C1120,138 1160,172 1200,165 L1200,220 L0,220 Z" fill="url(#wg1)"/>
+  </g>
+
+  <!-- Bottom accent -->
+  <rect x="0" y="215" width="300" height="2.5" fill="#ff6b6b" opacity="0.5"/>
+  <rect x="300" y="215" width="250" height="2.5" fill="#e8a735" opacity="0.5"/>
+  <rect x="550" y="215" width="250" height="2.5" fill="#c792ea" opacity="0.5"/>
+  <rect x="800" y="215" width="400" height="2.5" fill="#00d4ff" opacity="0.5"/>
+</svg>

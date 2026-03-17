@@ -1,0 +1,268 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;family=Caveat:wght@700&amp;display=swap');
+
+      .bg { fill: #0d1117; }
+
+      .quote-text {
+        font-family: 'Caveat', cursive, sans-serif;
+        font-size: 19px;
+        fill: #c9d1d9;
+      }
+      .quote-author {
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        fill: #ffffff;
+      }
+      .quote-role {
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        fill: #0d1117;
+      }
+      .role-pill { fill: #c792ea; }
+      .email-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 11px;
+        fill: #8b949e;
+      }
+
+      .glow-group {
+        animation: breatheGlow 3s ease-in-out infinite;
+      }
+      @keyframes breatheGlow {
+        0%, 100% { filter: drop-shadow(0 0 5px rgba(199,146,234,0.3)); }
+        50% { filter: drop-shadow(0 0 20px rgba(199,146,234,0.8)); }
+      }
+
+      .bot-group {
+        animation: floatBot 3s ease-in-out infinite;
+      }
+      @keyframes floatBot {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-14px); }
+      }
+
+      .bot-aura {
+        animation: pulseAura 2.5s ease-in-out infinite;
+      }
+      @keyframes pulseAura {
+        0%, 100% { opacity: 0.12; r: 72; }
+        50% { opacity: 0.35; r: 90; }
+      }
+
+      .desk-shimmer {
+        animation: shimmer 4s ease-in-out infinite;
+      }
+      @keyframes shimmer {
+        0%, 100% { opacity: 0.6; }
+        50% { opacity: 1; }
+      }
+
+      .star {
+        animation: twinkle 2s ease-in-out infinite;
+      }
+      .star:nth-child(2) { animation-delay: 0.5s; }
+      .star:nth-child(3) { animation-delay: 1s; }
+      .star:nth-child(4) { animation-delay: 1.5s; }
+      @keyframes twinkle {
+        0%, 100% { opacity: 0.2; }
+        50% { opacity: 1; }
+      }
+
+      .cursor-blink {
+        animation: blink 1s step-end infinite;
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+
+      .code-float {
+        animation: codeFloat 5s ease-in-out infinite;
+      }
+      @keyframes codeFloat {
+        0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.15; }
+        50% { transform: translateY(-8px) rotate(2deg); opacity: 0.3; }
+      }
+    </style>
+
+    <radialGradient id="botGlow">
+      <stop offset="0%" style="stop-color:#c792ea; stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#c792ea; stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="screenGlow">
+      <stop offset="0%" style="stop-color:#00d4ff; stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#00d4ff; stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="1200" height="320" rx="6"/>
+
+  <!-- Floating code snippets in background -->
+  <g class="code-float" style="animation-delay: 0s">
+    <text x="30" y="50" font-family="monospace" font-size="10" fill="#00d4ff" opacity="0.15">&lt;div&gt;</text>
+  </g>
+  <g class="code-float" style="animation-delay: 1s">
+    <text x="180" y="35" font-family="monospace" font-size="9" fill="#e8a735" opacity="0.12">const dev = true;</text>
+  </g>
+  <g class="code-float" style="animation-delay: 2s">
+    <text x="80" y="290" font-family="monospace" font-size="9" fill="#c792ea" opacity="0.12">return &lt;App /&gt;;</text>
+  </g>
+  <g class="code-float" style="animation-delay: 1.5s">
+    <text x="420" y="25" font-family="monospace" font-size="8" fill="#00d4ff" opacity="0.1">npm run build ✓</text>
+  </g>
+
+  <!-- Stars -->
+  <circle class="star" cx="60" cy="25" r="1.5" fill="#e8a735"/>
+  <circle class="star" cx="250" cy="55" r="1" fill="#00d4ff"/>
+  <circle class="star" cx="440" cy="18" r="1.2" fill="#c792ea"/>
+  <circle class="star" cx="750" cy="40" r="1" fill="#e8a735"/>
+  <circle class="star" cx="1120" cy="28" r="1.5" fill="#00d4ff"/>
+  <circle class="star" cx="950" cy="12" r="0.8" fill="#c792ea"/>
+
+  <!-- ===== LEFT SIDE: Desk Scene ===== -->
+  <g class="desk-shimmer" opacity="0.75">
+    <!-- Monitor -->
+    <rect x="55" y="90" width="200" height="130" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+    <rect x="65" y="100" width="180" height="105" rx="4" fill="#0d1117"/>
+    <!-- Screen content -->
+    <rect x="70" y="105" width="170" height="95" rx="2" fill="#111820"/>
+    <circle cx="70" cy="105" r="0" fill="url(#screenGlow)">
+      <animate attributeName="r" values="40;60;40" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="80" y="125" font-family="monospace" font-size="8" fill="#c792ea" opacity="0.8">import React from</text>
+    <text x="80" y="138" font-family="monospace" font-size="8" fill="#00d4ff" opacity="0.7">  'react';</text>
+    <text x="80" y="155" font-family="monospace" font-size="8" fill="#e8a735" opacity="0.7">function App() {'{'}</text>
+    <text x="80" y="168" font-family="monospace" font-size="8" fill="#e6edf3" opacity="0.5">  return (</text>
+    <text x="80" y="181" font-family="monospace" font-size="8" fill="#00d4ff" opacity="0.6">    &lt;Magic /&gt;</text>
+    <rect x="193" y="175" width="7" height="12" fill="#e8a735" class="cursor-blink"/>
+    <!-- Monitor stand -->
+    <rect x="135" y="220" width="35" height="12" rx="2" fill="#161b22"/>
+    <rect x="115" y="230" width="75" height="6" rx="3" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+
+    <!-- Keyboard -->
+    <rect x="80" y="248" width="150" height="28" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <g opacity="0.3">
+      <rect x="88" y="253" width="8" height="6" rx="1" fill="#21262d"/>
+      <rect x="100" y="253" width="8" height="6" rx="1" fill="#21262d"/>
+      <rect x="112" y="253" width="8" height="6" rx="1" fill="#21262d"/>
+      <rect x="124" y="253" width="8" height="6" rx="1" fill="#21262d"/>
+      <rect x="136" y="253" width="8" height="6" rx="1" fill="#21262d"/>
+      <rect x="148" y="253" width="8" height="6" rx="1" fill="#21262d"/>
+      <rect x="160" y="253" width="8" height="6" rx="1" fill="#21262d"/>
+      <rect x="172" y="253" width="8" height="6" rx="1" fill="#21262d"/>
+      <rect x="184" y="253" width="8" height="6" rx="1" fill="#21262d"/>
+      <rect x="196" y="253" width="8" height="6" rx="1" fill="#21262d"/>
+      <rect x="92" y="263" width="30" height="6" rx="1" fill="#21262d"/>
+      <rect x="128" y="263" width="50" height="6" rx="1" fill="#21262d"/>
+      <rect x="184" y="263" width="18" height="6" rx="1" fill="#21262d"/>
+    </g>
+
+    <!-- Plant pot -->
+    <rect x="290" y="235" width="22" height="28" rx="3" fill="#1a1f2b" stroke="#30363d" stroke-width="1"/>
+    <circle cx="301" cy="228" r="12" fill="#238636" opacity="0.6"/>
+    <circle cx="295" cy="222" r="8" fill="#2ea043" opacity="0.5"/>
+    <circle cx="308" cy="225" r="7" fill="#238636" opacity="0.4"/>
+
+    <!-- Coffee -->
+    <rect x="340" y="230" width="26" height="32" rx="4" fill="#1a1f2b" stroke="#30363d" stroke-width="1"/>
+    <path d="M366,240 Q378,240 378,250 Q378,258 366,258" fill="none" stroke="#30363d" stroke-width="1.5"/>
+    <path d="M348,228 Q351,215 348,205" fill="none" stroke="#8b949e" stroke-width="1" opacity="0.3">
+      <animate attributeName="opacity" values="0.1;0.5;0.1" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M356,229 Q359,218 356,208" fill="none" stroke="#8b949e" stroke-width="1" opacity="0.25">
+      <animate attributeName="opacity" values="0.2;0.45;0.2" dur="2.8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- ===== RIGHT SIDE: Quote + Identity ===== -->
+  <g class="glow-group">
+    <text class="quote-text">
+      <tspan x="510" y="95" font-size="20">"Between the first Hello World and a production deploy,</tspan>
+      <tspan x="530" y="128" font-size="20">lives a developer who chose curiosity over comfort."</tspan>
+    </text>
+  </g>
+
+  <!-- Author block -->
+  <text x="580" y="172" font-family="'Poppins', sans-serif" font-size="12" fill="#8b949e">— written by</text>
+  <text x="670" y="172" class="quote-author" font-size="18">Bhanu Sai Yarasu</text>
+
+  <!-- Role pill -->
+  <rect x="580" y="208" width="175" height="26" rx="13" class="role-pill"/>
+  <text x="667" y="226" class="quote-role" text-anchor="middle">⚡ Code · Create · Conquer</text>
+
+  <!-- Tagline -->
+  <text x="580" y="258" class="email-text" font-size="12">
+    <tspan fill="#00d4ff">React</tspan>
+    <tspan fill="#8b949e"> · </tspan>
+    <tspan fill="#e8a735">Java</tspan>
+    <tspan fill="#8b949e"> · </tspan>
+    <tspan fill="#c792ea">Spring Boot</tspan>
+    <tspan fill="#8b949e"> · </tspan>
+    <tspan fill="#00d4ff">Next.js</tspan>
+  </text>
+
+  <!-- ===== FLOATING BOT ===== -->
+  <g class="bot-group" transform="translate(1020, 70)">
+    <circle class="bot-aura" cx="50" cy="65" r="72" fill="url(#botGlow)"/>
+
+    <!-- Bot head -->
+    <rect x="22" y="20" width="56" height="45" rx="12" fill="#c792ea"/>
+    <rect x="28" y="28" width="44" height="28" rx="6" fill="#0d1117"/>
+    <!-- Eyes -->
+    <circle cx="40" cy="42" r="6" fill="#00d4ff">
+      <animate attributeName="fill" values="#00d4ff;#e8a735;#00d4ff" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="60" cy="42" r="6" fill="#e8a735">
+      <animate attributeName="fill" values="#e8a735;#00d4ff;#e8a735" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Eye glints -->
+    <circle cx="42" cy="40" r="2" fill="#fff" opacity="0.6"/>
+    <circle cx="62" cy="40" r="2" fill="#fff" opacity="0.6"/>
+
+    <!-- Antenna -->
+    <line x1="50" y1="20" x2="50" y2="5" stroke="#c792ea" stroke-width="2.5"/>
+    <circle cx="50" cy="3" r="5" fill="#e8a735">
+      <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="fill" values="#e8a735;#00d4ff;#c792ea;#e8a735" dur="3s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Body -->
+    <rect x="28" y="68" width="44" height="40" rx="8" fill="#c792ea" opacity="0.9"/>
+    <!-- Chest display -->
+    <rect x="36" y="74" width="28" height="16" rx="4" fill="#0d1117"/>
+    <text x="42" y="86" font-family="monospace" font-size="8" fill="#00d4ff">
+      &lt;/&gt;
+      <animate attributeName="fill" values="#00d4ff;#e8a735;#c792ea;#00d4ff" dur="3s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Arms -->
+    <rect x="12" y="72" width="14" height="10" rx="5" fill="#c792ea" opacity="0.85"/>
+    <rect x="74" y="72" width="14" height="10" rx="5" fill="#c792ea" opacity="0.85"/>
+
+    <!-- Legs -->
+    <rect x="34" y="106" width="12" height="14" rx="5" fill="#c792ea" opacity="0.8"/>
+    <rect x="54" y="106" width="12" height="14" rx="5" fill="#c792ea" opacity="0.8"/>
+
+    <!-- Waving hand (right arm) -->
+    <g transform="translate(88, 68)">
+      <animateTransform attributeName="transform" type="rotate" values="0 0 8;-15 0 8;0 0 8" dur="1.5s" repeatCount="indefinite" additive="sum"/>
+      <rect x="0" y="0" width="8" height="16" rx="4" fill="#e8a735" opacity="0.8"/>
+    </g>
+  </g>
+
+  <!-- ===== BOTTOM ACCENT LINE ===== -->
+  <rect x="0" y="305" width="350" height="3" rx="1.5" fill="#ff6b6b"/>
+  <rect x="350" y="305" width="250" height="3" rx="1.5" fill="#e8a735"/>
+  <rect x="600" y="305" width="250" height="3" rx="1.5" fill="#c792ea"/>
+  <rect x="850" y="305" width="350" height="3" rx="1.5" fill="#00d4ff"/>
+
+  <rect x="0" y="312" width="350" height="1.5" rx="1" fill="#ff6b6b" opacity="0.3"/>
+  <rect x="350" y="312" width="250" height="1.5" rx="1" fill="#e8a735" opacity="0.3"/>
+  <rect x="600" y="312" width="250" height="1.5" rx="1" fill="#c792ea" opacity="0.3"/>
+  <rect x="850" y="312" width="350" height="1.5" rx="1" fill="#00d4ff" opacity="0.3"/>
+</svg>
