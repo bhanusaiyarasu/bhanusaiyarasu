@@ -66,19 +66,20 @@ fun_fact: "I debug with console.log and I'm not ashamed 😄"
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=react,nextjs,redux,js,ts,java,spring,nodejs,express&perline=9&theme=dark" alt="Frontend & Backend"/>
+    <img src="https://skillicons.dev/icons?i=react,threejs,js,ts,html,css,wordpress&perline=7&theme=dark" alt="Frontend & 3D Web"/>
   </a>
 </p>
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,tailwind,bootstrap,mongodb,mysql,postgres,redis,docker&perline=9&theme=dark" alt="UI & Database"/>
+    <img src="https://skillicons.dev/icons?i=py,nodejs,android,playwright&perline=4&theme=dark" alt="AI, Mobile & Testing"/>
   </a>
 </p>
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,github,vscode,figma,postman,linux,vercel,netlify,aws&perline=9&theme=dark" alt="Tools & DevOps"/>
+    <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel,netlify&perline=5&theme=dark" alt="Tools & Deployment"/>
   </a>
 </p>
+
 
 <br/>
 
