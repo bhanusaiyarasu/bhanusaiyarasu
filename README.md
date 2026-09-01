@@ -34,10 +34,22 @@
 name: Bhanu Sai Yarasu
 role: Frontend-Focused Full Stack Developer
 location: India 🇮🇳
-currently_working_at: Phantasm Solutions Pvt Ltd
+education: B.Tech, CSE — IoT & Cybersecurity (incl. Blockchain Technology)
+previously: Web Development Intern @ Phantasm Solutions Pvt Ltd
 open_to: Remote opportunities worldwide 🌍
 fun_fact: "I debug with console.log and I'm not ashamed 😄"
 ```
+
+<br/>
+
+<!-- ===== CURRENTLY ===== -->
+## 🌱 Right Now
+
+- 🎓 Pursuing my B.Tech in **CSE — IoT & Cybersecurity, including Blockchain Technology**
+- 💼 Wrapped up a web development internship at **Phantasm Solutions**, shipping live client projects — ERP systems, 3D portfolios, e-commerce platforms, business sites
+- 🧪 Exploring cybersecurity hands-on through the **Tata Cybersecurity Analyst Job Simulation**
+- 🛠️ Building **CYVORYX**, a small web-development studio, alongside coursework
+- 👀 Open to freelance work, collaborations, and remote opportunities
 
 <br/>
 
